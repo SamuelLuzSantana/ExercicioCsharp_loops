@@ -29,8 +29,8 @@ namespace Validação_de_Especificações
                 idade = int.Parse(Console.ReadLine());
                 Console.WriteLine("");
                 
-                if(idade == 0){Console.WriteLine("Defina uma idade Valida \n");}
-            }while(idade == 0);
+                if(idade <=0 || idade>150){Console.WriteLine("Defina uma idade Valida \n");}
+            }while(idade <=0 || idade>150);
 
             do{
                 
@@ -59,8 +59,8 @@ namespace Validação_de_Especificações
                         break;        
                 }
                 
-                if(civil == " "){Console.WriteLine("Digite um estado civil das Opções pré determinadas.\n");}
-            }while(civil == " ");
+                if(civil != "v" || civil != "c" || civil != "s"){Console.WriteLine("Digite um estado civil das Opções pré determinadas.\n");}
+            }while(civil != "v" || civil != "c" || civil != "s");
 
             Console.WriteLine("Confirme seus dados: ");
              Console.WriteLine("----------------------------");
